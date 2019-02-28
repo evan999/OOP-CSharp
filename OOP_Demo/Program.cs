@@ -55,6 +55,33 @@ namespace OOP_Demo
             // Keep window open until user presses any key to close
             Console.WriteLine("Press any key to close");
             Console.ReadLine();
+
+            // Explicitly invoking the Dispose method
+            // var word = new ManagedWord();
+            // word.Dispose();
+
+            var word = default(ManagedWord);
+            try
+            {
+                word = new ManagedWord();
+            }
+            catch
+            {
+                // Code to handle errors
+            }
+            finally
+            {
+                if (word != null)
+                {
+                    word.Dispose();
+                }
+            }
+
+            // Implicitly invoke Dispose
+            using (var word = default(ManagedWord))
+            {
+
+            }
         }
     }
 }
