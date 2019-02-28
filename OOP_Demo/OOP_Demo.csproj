@@ -43,7 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Coffee.cs" />
+    <Compile Include="Customer.cs" />
     <Compile Include="DrinksMachine.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="ILoyaltyCardHolder.cs" />
+    <Compile Include="IBeverage.cs" />
+    <Compile Include="Manager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
